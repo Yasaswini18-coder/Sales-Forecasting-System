@@ -117,6 +117,7 @@ plt.ylabel('Average Weekly Sales')
 plt.xticks(rotation=45)
 plt.grid(True)
 plt.tight_layout()
+plt.savefig('monthly_sales_trend.png')
 plt.show()
 
 # =====================================
@@ -134,6 +135,7 @@ sns.heatmap(
 )
 
 plt.title('Correlation Heatmap')
+plt.savefig('correlation_heatmap.png')
 plt.show()
 
 # =====================================
@@ -316,6 +318,7 @@ sns.barplot(
 plt.title('Feature Importance - Random Forest')
 plt.xlabel('Importance Score')
 plt.ylabel('Features')
+plt.savefig('feature_importance.png')
 plt.show()
 
 # =====================================
@@ -341,6 +344,7 @@ plt.xlabel('Samples')
 plt.ylabel('Weekly Sales')
 plt.legend()
 plt.grid(True)
+plt.savefig('actual_vs_predicted.png')
 plt.show()
 
 # =====================================
@@ -377,4 +381,5 @@ plt.xlabel('Future Weeks')
 plt.ylabel('Weekly Sales')
 plt.legend()
 plt.grid(True)
+plt.savefig('future_sales_forecast.png')
 plt.show()
